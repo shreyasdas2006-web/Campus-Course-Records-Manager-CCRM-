@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+
+# Compiled output
+*.class
+*.o
+*.out
+
+# Logs
+*.log
