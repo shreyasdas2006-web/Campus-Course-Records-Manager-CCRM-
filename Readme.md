@@ -1,212 +1,350 @@
 <h1 align="center">
   <br>
-  Campus Course & Records Manager (CCRM)
+  🎓 Campus Course &amp; Records Manager (CCRM)
   <br>
 </h1>
 
 <p align="center">
-  <a href="https://github.com/njd07/Campus-Course-Records-Manager-CCRM">
+  A console-based Java SE application for managing students, courses, enrollments, grades &amp; transcripts.
+</p>
+
+<p align="center">
+  <a href="https://github.com/shreyasdas2006-web/Campus-Course-Records-Manager-CCRM-">
     <img src="https://img.shields.io/badge/version-1.0-blue.svg" alt="Version">
   </a>
-  <a href="https://github.com/njd07/Campus-Course-Records-Manager-CCRM/issues">
-    <img src="https://img.shields.io/github/issues/njd07/Campus-Course-Records-Manager-CCRM.svg" alt="Issues">
+  <img src="https://img.shields.io/badge/Java-17%2B-orange?logo=java" alt="Java 17+">
+  <img src="https://img.shields.io/badge/type-Console%20App-brightgreen" alt="Console App">
+  <img src="https://img.shields.io/badge/pattern-OOP%20%7C%20Singleton%20%7C%20Builder-purple" alt="Patterns">
+  <a href="https://github.com/shreyasdas2006-web/Campus-Course-Records-Manager-CCRM-/issues">
+    <img src="https://img.shields.io/github/issues/shreyasdas2006-web/Campus-Course-Records-Manager-CCRM-.svg" alt="Issues">
   </a>
-  <a href="https://github.com/njd07/Campus-Course-Records-Manager-CCRM/stargazers">
-    <img src="https://img.shields.io/github/stars/njd07/Campus-Course-Records-Manager-CCRM.svg" alt="Stars">
+  <a href="https://github.com/shreyasdas2006-web/Campus-Course-Records-Manager-CCRM-/stargazers">
+    <img src="https://img.shields.io/github/stars/shreyasdas2006-web/Campus-Course-Records-Manager-CCRM-.svg" alt="Stars">
   </a>
 </p>
 
 <p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#requirements">Requirements</a> •
-  <a href="#how-to-use">Build & Run</a> •
-  <a href="#project-structure">Project Structure</a> •
-  <a href="#-evolution-of-java">Evolution of Java</a> •
-  <a href="#java-me-vs-se-vs-ee">Java ME vs SE vs EE</a> •
-  <a href="#jdk-jre-jvm-explained">JDK, JRE, JVM</a> •
-  <a href="#-mapping-syllabus--implementation">Mapping Syllabus → Implementation</a> •
-  <a href="#install-on-windows">Install on Windows</a> •
-  <a href="#screenshots">Screenshots</a>
+  <a href="#-project-statement">Project Statement</a> •
+  <a href="#-key-features">Key Features</a> •
+  <a href="#-requirements">Requirements</a> •
+  <a href="#-build--run">Build &amp; Run</a> •
+  <a href="#-project-structure">Project Structure</a> •
+  <a href="#-oop--design-patterns">OOP &amp; Design Patterns</a> •
+  <a href="#-advanced-java-features">Advanced Java</a> •
+  <a href="#-grading-system">Grading System</a> •
+  <a href="#-syllabus-mapping">Syllabus Mapping</a> •
+  <a href="#-java-editions--jdk-explained">Java Editions</a> •
+  <a href="#-screenshots">Screenshots</a>
 </p>
 
 ---
 
-## Project Statement
+## 📋 Project Statement
 
-Design and implement a console-based Java application called **Campus Course & Records Manager (CCRM)** that lets an institute manage:
+Design and implement a **console-based Java application** called **Campus Course &amp; Records Manager (CCRM)** that lets an institute manage:
 
-- Students (create/update, enroll/unenroll in courses, print transcripts)
-- Courses (create/update, list, search, assign instructors)
-- Grades & Transcripts (record marks, compute GPA, generate transcript view)
-- File Utilities (import/export CSV, backup course data with recursion)
-- Console Menu System (menu-driven workflow for all operations)
+- 👤 **Students** — add, list, update, enroll/unenroll, print transcripts
+- 📚 **Courses** — create, list, update, search, assign instructors
+- 🏆 **Grades &amp; Transcripts** — record marks, compute GPA, generate transcript view
+- 💾 **File Utilities** — export CSV, backup course data with timestamped folders
+- 🖥️ **Console Menu System** — menu-driven workflow for all operations
 
-This is a **Java SE project** built and run locally. It demonstrates OOP principles (Encapsulation, Inheritance, Abstraction, Polymorphism), Exception Handling, Java I/O (NIO.2 + Streams), Date/Time API, functional interfaces & lambdas, recursion, enums, and design patterns (Singleton, Builder).
-
----
-
-## Key Features
-
-- **Student Management** – add/list/update/deactivate students, print transcript
-- **Course Management** – create/list/update courses, search/filter by instructor/semester/department
-- **Enrollment & Grading** – enroll/unenroll, enforce max credits, record marks, compute GPA
-- **Import/Export CSV** – import student/course data, export records, backup with timestamped folders
-- **CLI Menu System** – simple interactive menu for all operations
-- **Advanced Java** – Streams, Lambdas, Enums, Custom Exceptions, Design Patterns
+This is a **Java SE project** built and run locally. It demonstrates OOP principles (Encapsulation, Inheritance, Abstraction, Polymorphism), Exception Handling, Java I/O (NIO.2), Date/Time API, Streams &amp; Lambdas, Enums, and Design Patterns (Singleton, Builder).
 
 ---
 
-## Requirements
-- JDK 17+
-- IDE: IntelliJ IDEA / Eclipse
+## ✨ Key Features
+
+| Feature | Description |
+|---|---|
+| 👤 **Student Management** | Add, list students; auto-seeded with sample data on startup |
+| 📚 **Course Management** | Create &amp; list courses; search/filter by instructor, semester, code |
+| 📝 **Enrollment System** | Enroll students; enforce max-credit cap (21 credits) per student |
+| 🎯 **Marks &amp; Grading** | Record marks (0–100); auto-convert to grade (S/A/B/C/D/F) |
+| 📄 **Transcript &amp; GPA** | View full academic transcript with computed cumulative GPA |
+| 💾 **CSV Export** | Export student &amp; course data to structured CSV files |
+| 🔒 **Backup System** | One-click backup with auto-generated timestamped folders |
+| ⚠️ **Custom Exceptions** | Business-rule exceptions for duplicate enrollment &amp; credit overload |
+| 🏗️ **Design Patterns** | Singleton (`AppConfig`) + Builder (`Course`) patterns |
 
 ---
 
-## How To Use
+## ⚙️ Requirements
+
+| Requirement | Specification |
+|---|---|
+| **JDK** | Java 17 or higher (LTS) |
+| **IDE** | IntelliJ IDEA / Eclipse (recommended) |
+| **OS** | Windows / macOS / Linux |
+| **Build Tool** | Manual `javac` (no Maven/Gradle needed) |
+| **Dependencies** | None — 100% standard Java SE |
+
+---
+
+## 🚀 Build &amp; Run
 
 ```bash
-# Clone this repository
-git clone https://github.com/njd07/Campus-Course-Records-Manager-CCRM.git
+# 1. Clone this repository
+git clone https://github.com/shreyasdas2006-web/Campus-Course-Records-Manager-CCRM-.git
 
-# Go into the project directory
-cd Campus-Course-Records-Manager-CCRM
+# 2. Go into the project directory
+cd Campus-Course-Records-Manager-CCRM-
 
-# Compile the program
-javac src/edu/ccrm/CrmApp.java
+# 3. Compile from the project root
+javac -d out -sourcepath src src/edu/ccrm/CrmApp.java
 
-# Run the program
-java -cp src edu.ccrm.CrmApp
+# 4. Run the application
+java -cp out edu.ccrm.CrmApp
 ```
 
-Sample CSV data files are available inside `proj_data/`.
+> 💡 Sample CSV data files for testing are available inside `proj_data/`.
+
+### Install JDK on Windows
+
+1. Download **JDK 17+** from [Oracle](https://www.oracle.com/java/technologies/downloads/)
+2. Set environment variables:
+   - `JAVA_HOME = C:\Program Files\Java\jdk-17`
+   - Add `%JAVA_HOME%\bin` to `PATH`
+3. Verify: `java -version` and `javac -version`
+4. Open the project in **IntelliJ IDEA** or **Eclipse** and run `CrmApp.java`
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
-Campus-Course-Records-Manager-CCRM/
-├── ccrm_data/
-│   ├── courses_export.csv
-│   └── students_export.csv
-├── proj_data/
-│   ├── courses_sample.csv
-│   └── students_sample.csv
-├── screenshots/
-│   ├── file_struct.png
-│   ├── java_version_check.png
-│   ├── menu.png
-│   └── menu_test.png
-├── src/edu/ccrm
+Campus-Course-Records-Manager-CCRM-/
+│
+├── src/edu/ccrm/                       ← Main source root
+│   ├── CrmApp.java                     ← Entry point & console menu
 │   ├── config/
-│   │   └── AppConfig.java
-│   ├── model/
-│   │   ├── Course.java
-│   │   ├── Enrollment.java
-│   │   ├── Grade.java
-│   │   ├── Instructor.java
-│   │   ├── Person.java
-│   │   ├── Semester.java
-│   │   └── Student.java
-│   ├── service/
-│   │   ├── CourseService.java
-│   │   ├── EnrollmentService.java
-│   │   └── StudentService.java
-│   ├── util/
-│   │   ├── exception/
-│   │   │   ├── DuplicateEnrollmentException.java
-│   │   │   └── MaxCreditLimitExceededException.java
-│   │   └── io/
-│   │       └── FileHandler.java
-│   └── CrmApp.java
-├── README.md
-└── Usage.md
+│   │   └── AppConfig.java              ← Singleton: central in-memory data store
+│   ├── model/                          ← Domain entity classes
+│   │   ├── Person.java                 ← Abstract base class (id, name, email)
+│   │   ├── Student.java                ← Extends Person; holds enrolled courses
+│   │   ├── Instructor.java             ← Extends Person; adds department
+│   │   ├── Course.java                 ← Builder pattern; code, title, credits
+│   │   ├── Enrollment.java             ← Links Student ↔ Course with grade & date
+│   │   ├── Grade.java                  ← Enum: S/A/B/C/D/F with grade points
+│   │   └── Semester.java               ← Enum: FALL, SPRING, SUMMER
+│   ├── service/                        ← Business logic layer
+│   │   ├── StudentService.java         ← Add, find, list students
+│   │   ├── CourseService.java          ← Add, find, list courses
+│   │   └── EnrollmentService.java      ← Enroll, grade, GPA, transcript
+│   └── util/
+│       ├── exception/
+│       │   ├── DuplicateEnrollmentException.java
+│       │   └── MaxCreditLimitExceededException.java
+│       └── io/
+│           └── FileHandler.java        ← CSV export, backup, folder size (NIO.2)
+│
+├── ccrm_data/                          ← Runtime-generated export files
+│   ├── students_export.csv
+│   └── courses_export.csv
+├── proj_data/                          ← Sample seed data for testing
+│   ├── students_sample.csv
+│   └── courses_sample.csv
+├── screenshots/                        ← App screenshots
+├── Project_Report.md                   ← Full project report
+├── Usage.md                            ← Step-by-step usage guide
+└── README.md                           ← This file
 ```
 
 ---
 
-## 🕰 Evolution of Java
+## 🧱 OOP &amp; Design Patterns
 
-* **1995**: Java 1.0 – Write once, run anywhere
-* **1998**: Java 2 (J2SE, J2EE, J2ME introduced)
-* **2004**: Java 5 (Generics, Annotations, Enums)
-* **2014**: Java 8 (Streams, Lambdas, Date/Time API)
-* **2017**: Java 9 (Modules)
-* **2021–2025**: Java 17, 21 LTS – Records, Sealed Classes, Pattern Matching
+### Inheritance Hierarchy
 
----
+```
+Person  (abstract)
+├── Student      → adds regNo, enrolledCourses list
+└── Instructor   → adds department
+```
 
-## Java ME vs SE vs EE
+### Four Pillars of OOP
 
-| Edition                     | Purpose                                   | Example Use Cases                              |
-| --------------------------- | ----------------------------------------- | ---------------------------------------------- |
-| **ME (Micro Edition)**      | Lightweight, resource-constrained devices | Embedded systems, feature phones               |
-| **SE (Standard Edition)**   | Core Java libraries + APIs                | Desktop apps, CLI apps (like CCRM)             |
-| **EE (Enterprise Edition)** | Adds web, enterprise APIs                 | Servlets, JSP, Jakarta EE, enterprise backends |
+| Principle | Implementation |
+|---|---|
+| **Encapsulation** | All model fields are `private` with public getters/setters |
+| **Inheritance** | `Student` and `Instructor` both extend abstract `Person` |
+| **Abstraction** | `Person` defines abstract `getDetails()` — subclasses must implement |
+| **Polymorphism** | `getDetails()` behaves differently in `Student` vs `Instructor` |
 
----
+### Design Patterns
 
-## JDK, JRE, JVM Explained
+#### 🔒 Singleton — `AppConfig`
+Ensures a single shared in-memory data store (students, courses, enrollments, instructors) across all service classes:
 
-* **JVM** (Java Virtual Machine): Executes compiled bytecode
-* **JRE** (Java Runtime Environment): JVM + libraries to *run* apps
-* **JDK** (Java Development Kit): JRE + compiler + dev tools to *build* apps
+```java
+public static AppConfig getInstance() {
+    if (instance == null) instance = new AppConfig();
+    return instance;
+}
+```
 
----
+#### 🔨 Builder — `Course`
+Enables clean, readable object construction without telescoping constructors:
 
-## 📑 Mapping Syllabus → Implementation
-
-| Syllabus Topic                                 | Where in Project                                                            |
-| ---------------------------------------------- | --------------------------------------------------------------------------- |
-| OOP (Encapsulation, Inheritance, Polymorphism) | `Student.java`, `Instructor.java`, `Course.java`, `Person.java`             |
-| Abstraction (interfaces)                       | `service/StudentService.java`, `CourseService.java`                         |
-| Packages                                       | `edu.ccrm.model`, `edu.ccrm.service`, `edu.ccrm.util`                       |
-| Exception Handling                             | `DuplicateEnrollmentException.java`, `MaxCreditLimitExceededException.java` |
-| Collections Framework                          | `CourseService.java` and `EnrollmentService.java`                           |
-| Generics                                       | Service methods with `List<Student>` and `List<Course>`                     |
-| I/O (File, NIO.2)                              | `FileHandler.java`                                                          |
-| Threads/Concurrency                            | Backups and File operations with NIO.2                                      |
-| Date/Time API                                  | `Enrollment.java` uses `LocalDate`                                          |
-| Assertions                                     | Invariants in constructors (`assert id > 0`)                                |
-| Design Patterns                                | Singleton: `AppConfig.java`                                                 |
+```java
+Course c1 = new Course.Builder("CS101")
+        .title("Intro to Programming")
+        .credits(4)
+        .semester(Semester.FALL)
+        .instructor(profGupta)
+        .build();
+```
 
 ---
 
-# Install on Windows
+## ⚡ Advanced Java Features
 
-1. Download **JDK 17** from [Oracle](https://www.oracle.com/java/technologies/downloads/).
-2. Install and set environment variables:
-
-    * `JAVA_HOME=C:\Program Files\Java\jdk-17`
-    * Add `%JAVA_HOME%\bin` to `PATH`
-3. Verify installation:
-
-   ```
-   java -version
-   javac -version
-   ```
-4. Install **Eclipse IDE** or **IntelliJ IDEA**
-5. Import project and run `CrmApp.java`
+| Feature | Where Used |
+|---|---|
+| **Generics** | `List<Student>`, `List<Course>`, `List<Enrollment>` in all service classes |
+| **Collections (ArrayList)** | Dynamic in-memory storage of all runtime data |
+| **Enums** | `Grade` (with `fromMarks()` + grade points), `Semester` |
+| **Streams &amp; Lambdas** | `findStudentById()`, `findCourseByCode()` using `filter().findFirst()` |
+| **Date/Time API** | `LocalDate` used in `Enrollment` for enrollment date |
+| **Java NIO.2** | `Path`, `Paths`, `Files` in `FileHandler.java` for all file ops |
+| **Custom Exceptions** | `DuplicateEnrollmentException`, `MaxCreditLimitExceededException` |
+| **Assertions** | Constructor-level invariant checks (`assert id > 0`) |
+| **Recursion** | `getFolderSize()` recursively walks the backup directory tree |
 
 ---
 
-## Screenshots
+## 🎓 Grading System
 
-### 1. Java installation verification
+Marks are converted automatically to a letter grade using the `Grade` enum:
 
+| Grade | Marks Range | Grade Points |
+|-------|-------------|:------------:|
+| **S** | 90 – 100    | 10.0         |
+| **A** | 80 – 89     | 9.0          |
+| **B** | 70 – 79     | 8.0          |
+| **C** | 60 – 69     | 7.0          |
+| **D** | 50 – 59     | 6.0          |
+| **F** | Below 50    | 0.0          |
+
+**GPA Formula:**
+```
+GPA = Σ (Grade Points × Course Credits) / Σ Course Credits
+```
+
+---
+
+## 🖥️ Console Menu
+
+```text
+--- Main Menu ---
+1. Add New Student
+2. List All Students
+3. List All Courses
+4. Enroll a Student
+5. Record Marks for a Student
+6. View Student Transcript
+7. Export Data to CSV
+8. Create a Backup
+9. Exit
+--------------------
+Enter your choice:
+```
+
+**Typical workflow:**
+1. **Add student** → Option `1`
+2. **Enroll in course** → Option `4`
+3. **Record marks** → Option `5`
+4. **View transcript &amp; GPA** → Option `6`
+5. **Export &amp; backup** → Options `7` / `8`
+
+> See [`Usage.md`](Usage.md) for a detailed step-by-step walkthrough with sample console output.
+
+---
+
+## 📑 Syllabus Mapping
+
+| Syllabus Topic | Implementation in CCRM |
+|---|---|
+| OOP – Encapsulation | Private fields + getters/setters in all model classes |
+| OOP – Inheritance | `Student`, `Instructor` extend `Person` |
+| OOP – Abstraction | Abstract class `Person` with abstract `getDetails()` |
+| OOP – Polymorphism | Overridden `getDetails()` in `Student` and `Instructor` |
+| Packages | `edu.ccrm.model`, `edu.ccrm.service`, `edu.ccrm.util` |
+| Exception Handling | `DuplicateEnrollmentException`, `MaxCreditLimitExceededException`; try-catch throughout |
+| Collections Framework | `ArrayList<>` in `AppConfig`, services |
+| Generics | `List<Student>`, `List<Course>`, `List<Enrollment>` |
+| Enums | `Grade` (with methods), `Semester` |
+| Streams &amp; Lambdas | Student/Course search using `stream().filter().findFirst()` |
+| Date/Time API | `LocalDate enrollmentDate` in `Enrollment.java` |
+| File I/O (NIO.2) | `FileHandler.java` — CSV export, backup, `Files.walk()` |
+| Recursion | `getFolderSize()` walks directory tree recursively |
+| Assertions | Constructor invariants (`assert id > 0`) |
+| Design Pattern – Singleton | `AppConfig.getInstance()` |
+| Design Pattern – Builder | `Course.Builder` |
+
+---
+
+## ☕ Java Editions & JDK Explained
+
+### Java ME vs SE vs EE
+
+| Edition | Purpose | Example Use Cases |
+|---|---|---|
+| **ME** (Micro Edition) | Lightweight, resource-constrained devices | Embedded systems, feature phones |
+| **SE** (Standard Edition) | Core Java libraries + APIs | Desktop apps, CLI apps **(like CCRM)** |
+| **EE** (Enterprise Edition) | Adds web &amp; enterprise APIs | Servlets, JSP, Jakarta EE backends |
+
+### JDK → JRE → JVM
+
+```
+JDK  (Java Development Kit)
+ └─ JRE  (Java Runtime Environment)
+     └─ JVM  (Java Virtual Machine)
+```
+
+- **JVM** — Executes compiled `.class` bytecode on any OS
+- **JRE** — JVM + standard libraries to *run* Java apps
+- **JDK** — JRE + `javac` compiler + dev tools to *build* Java apps
+
+### 🕰 Evolution of Java
+
+| Year | Milestone |
+|---|---|
+| 1995 | Java 1.0 — "Write once, run anywhere" |
+| 1998 | Java 2: J2SE, J2EE, J2ME introduced |
+| 2004 | Java 5 — Generics, Annotations, Enums |
+| 2014 | Java 8 — Streams, Lambdas, Date/Time API |
+| 2017 | Java 9 — Module system (Jigsaw) |
+| 2021 | Java 17 LTS — Records, Sealed Classes |
+| 2023 | Java 21 LTS — Pattern Matching, Virtual Threads |
+
+---
+
+## 📸 Screenshots
+
+### 1. Java Installation Verification
 ![java-version-check](screenshots/java_version_check.png)
 
-### 2. Project menu
-
+### 2. Application Main Menu
 ![menu](screenshots/menu.png)
 
-### 3. Project file structure
-
+### 3. Project File Structure
 ![file-struct](screenshots/file_struct.png)
 
-### 4. Sample menu test
-
+### 4. Sample Menu Test
 ![menu-test](screenshots/menu_test.png)
 
+---
 
-<h3 align="center">✨ THANK YOU FOR CHECKING OUT THE PROJECT! ✨</h3> <p align="center">Feel free to open issues or contribute via pull requests.</p> 
+## 📄 Documentation
+
+| File | Description |
+|---|---|
+| [`README.md`](README.md) | This file — project overview &amp; reference |
+| [`Usage.md`](Usage.md) | Step-by-step usage walkthrough with console output examples |
+| [`Project_Report.md`](Project_Report.md) | Full academic project report (17 sections) |
+
+---
+
+<h3 align="center">✨ Thank you for checking out CCRM! ✨</h3>
+<p align="center">Feel free to open issues or contribute via pull requests.</p>
